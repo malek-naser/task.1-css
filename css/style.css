@@ -1,0 +1,84 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.header {
+    background-color: teal;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.header h2 {
+    transition: color 1s;
+    color: floralwhite;
+    width: 300px;
+    background-color: black;
+    transition: width 2.5s;
+    box-shadow: 3px 3px 5px 2px;
+    margin-bottom: 7px;
+
+}
+.header p {
+    background-color: gray;
+    color: white;
+    padding: 2.5px 4px;
+    box-shadow: 1.5px 1.5px 4px 1px black;
+    font-style: italic;
+}
+.container{
+    width: 80%;
+    margin: auto;
+}
+
+.portfoilo {
+    background-color: #303030;
+  }
+  
+  .portfoilo .container {
+   float: center;
+    /* flex-wrap: wrap; */
+    gap: 10px;
+  }
+  
+  .row {
+    display: flex;
+    gap: 20px;
+  }
+  
+  .portfoilo-item {
+    border-radius: 3px solid blue;
+    position: relative;
+  }
+  
+  .portfoilo img {
+    width: 100%;
+    display: block;
+    border-radius: 30px;
+  }
+  
+  .portfoilo-item .item-show {
+    background-color: rgba(255, 200, 0, 0.9);
+    color: white;
+    position: absolute;
+    top: 0px;
+    bottom: 0px;
+    right: 0px;
+    left: 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    cursor: pointer;
+    transition: opacity 1s, delay 1s, background-color 1s;
+    transition: transform 1;
+  }
+  
+  .item-show:hover {
+    opacity: 0.8;
+    background-color: rgba(255, 200, 0, 0.9);
+    border-radius: 30px;
+  }
+  
